@@ -10,6 +10,9 @@ describe('Hello World', function () {
     .expect(200)
     .expect('Content-Length', 11)
     .expect('Content-Type', 'text/plain; charset=utf-8')
+	.expect(function (res) {
+
+	})
     .end(done)
   })
 })
